@@ -128,4 +128,24 @@ public class MyNodeTest {
                 && myLinkedList.tail.equals(myThirdNode);
         Assert.assertTrue(result);
     }
+    //UC9
+    @Test
+    public void given3NumbersShouldAddElementAndDeleteAtAnyIndexInLinkedList() {
+        MyNode<Integer> myFirstNode=new MyNode<>(56);
+        MyNode<Integer> mySecondNode=new MyNode<>(30);
+        MyNode<Integer> myThirdNode=new MyNode<>(70);
+        MyNode<Integer> myNewNode=new MyNode<>(40);
+        MyLinkedList myLinkedList = new MyLinkedList();
+        myLinkedList.addElement(myFirstNode);
+        myLinkedList.addElement(mySecondNode);
+        myLinkedList.addElement(myThirdNode);
+        INode element=myLinkedList.search(mySecondNode);
+        myLinkedList.insert(element, myNewNode);
+        myLinkedList.deleteAtIndex(myNewNode);
+        myLinkedList.printMyNodes();
+        boolean result =myLinkedList.head.equals(myFirstNode)
+                && myLinkedList.head.getNext().equals(mySecondNode)
+                && myLinkedList.tail.equals(myThirdNode);
+        Assert.assertTrue(result);
+    }
 }

@@ -3,6 +3,7 @@ package com.bridgelabz;
 public class MyLinkedList<K> {
     public INode head;
     public INode tail;
+    public static int count;
 
     public MyLinkedList() {
         this.head = null;
@@ -75,6 +76,22 @@ public class MyLinkedList<K> {
             tempNode = tempNode.getNext();
         }
         return tempNode.getNext();
+    }
+    //Method to delete an element at any index in Linked List
+    public INode deleteAtIndex(INode element) {
+        count--;
+        if (head.equals(element)) {
+            INode del = head;
+            head = head.getNext();
+            return del;
+        }
+        INode tempDeleteNode= head;
+        while (!tempDeleteNode.getNext().equals(element)) {
+            tempDeleteNode = tempDeleteNode.getNext();
+        }
+        INode tempNode = tempDeleteNode.getNext();
+        tempDeleteNode.setNext(tempDeleteNode.getNext().getNext());
+        return tempNode;
     }
 
     public void printMyNodes() {
