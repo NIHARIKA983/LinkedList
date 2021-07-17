@@ -108,4 +108,24 @@ public class MyNodeTest {
         myLinkedList.printMyNodes();
         Assert.assertEquals(myLinkedList.search(mySecondNode),mySecondNode);
     }
+    //UC8
+    @Test
+    public void given3NumbersShouldSearchElementAndThenAddOneElementAfterThatInLinkedList() {
+        MyNode<Integer> myFirstNode=new MyNode<>(56);
+        MyNode<Integer> mySecondNode=new MyNode<>(30);
+        MyNode<Integer> myThirdNode=new MyNode<>(70);
+        MyNode<Integer> myNewNode=new MyNode<>(40);
+        MyLinkedList myLinkedList = new MyLinkedList();
+        myLinkedList.addElement(myFirstNode);
+        myLinkedList.addElement(mySecondNode);
+        myLinkedList.addElement(myThirdNode);
+        INode element=myLinkedList.search(mySecondNode);
+        myLinkedList.insert(element, myNewNode);
+        myLinkedList.printMyNodes();
+        boolean result =myLinkedList.head.equals(myFirstNode)
+                && myLinkedList.head.getNext().equals(mySecondNode)
+                &&myLinkedList.head.getNext().getNext().equals(myNewNode)
+                && myLinkedList.tail.equals(myThirdNode);
+        Assert.assertTrue(result);
+    }
 }
