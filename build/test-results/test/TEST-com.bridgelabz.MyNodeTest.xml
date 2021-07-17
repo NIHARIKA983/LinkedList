@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.MyNodeTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2021-07-17T13:47:46" hostname="NIHARIKA" time="0.037">
+<testsuite name="com.bridgelabz.MyNodeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-07-17T14:00:46" hostname="NIHARIKA" time="0.015">
   <properties/>
-  <testcase name="given3NumbersWhenSearched30ShouldGiveItsPosition" classname="com.bridgelabz.MyNodeTest" time="0.016"/>
-  <testcase name="given3NumbersShouldAddElementAndDeleteAtAnyIndexInLinkedList" classname="com.bridgelabz.MyNodeTest" time="0.001"/>
-  <testcase name="given3NumbersWhenLinkedShouldPassedLikedListTest" classname="com.bridgelabz.MyNodeTest" time="0.0"/>
-  <testcase name="given3NumbersShouldSearchElementAndThenAddOneElementAfterThatInLinkedList" classname="com.bridgelabz.MyNodeTest" time="0.001"/>
-  <testcase name="given3NumbersWhenPoppedShouldRemoveTheFirstNode" classname="com.bridgelabz.MyNodeTest" time="0.001"/>
-  <testcase name="given3NumbersWhenPoppedShouldRemoveTheLastNode" classname="com.bridgelabz.MyNodeTest" time="0.001"/>
-  <testcase name="given3NumbersWhenAddedToLinkedListShouldBeAddedToTop" classname="com.bridgelabz.MyNodeTest" time="0.002"/>
-  <testcase name="given3NumbersWhenInsertingSecondInBetweenShouldPassLinkedListTest" classname="com.bridgelabz.MyNodeTest" time="0.001"/>
-  <testcase name="given3NumbersWhenAppendedToLinkedListShouldBeAddedToLast" classname="com.bridgelabz.MyNodeTest" time="0.0"/>
-  <system-out><![CDATA[My Nodes: 56->30->70
-My Nodes: 56->30->70
-My Nodes: 56->30->40->70
-My Nodes: 30->70
-My Nodes: 56->30
-My Nodes: 56->30->70
+  <testcase name="given4NumbersShouldSortedInASECorderInLinkedList" classname="com.bridgelabz.MyNodeTest" time="0.015"/>
+  <system-out><![CDATA[My Nodes: 30->40->56->70
+4
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
